@@ -2,9 +2,21 @@ let name = prompt("Enter your name:");
 let age = prompt("Enter your age:");
 let email = prompt("Enter your email:");
 
-alert(`Hi ${name}, your are ${age} years old and we'll keep in touch via your email: ${email}`);
-//Yeterday's work
-console.log("Hello, JavaScript is connected!");
+//alert(`Hi ${name}, your are ${age} years old and we'll keep in touch via your email: ${email}`;
+
+
+if (age < 12) {
+    alert(`Hi ${name}, you are ${age} years old and you are too young to register. Sorry`);
+} else if (age >= 12 && age < 18) {
+    alert(`Hi ${name}, you are ${age} years old and you have limited options to register for. We will keep in touch via your email: ${email}.`);
+} else {
+    alert(`Hi ${name}, you are ${age} years old and you can register for any option of your choosing. We will keep in touch via your email: ${email}.`);
+}
+
+
+
+
+//console.log("Hello, JavaScript is connected!");
 
 let myName = "Miss Booba";
 console.log(myName);
@@ -35,5 +47,7 @@ console.log(typeof score);
 
 let school = "Tech4Girls"
 console.log(typeof school);
+
+
 
 
